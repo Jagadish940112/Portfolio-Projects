@@ -1,0 +1,12 @@
+1. Create new database - Databases(Right-Click), New Database, Database name: Portfolio Project, OK
+2. Portfolio Project(Right-Click), Tasks, Import Data
+3. SQL Server Import and Export Wizard - Next >
+4. Data Source - Microsoft Excel, Excel file path - Browse, Excel version - (automatically detect), Next >
+5. Destination - SQL Server Native Client 11.0, Server name, Authentication - Windows, Database, Next >
+6. Copy data from one or more tables or views
+7. Select Source Tables and Views - Pick First one only, Next >
+8. Run immediately, Finish >>|
+9. Finish
+10. Close
+11. Remove "$" from table name
+12. Done
