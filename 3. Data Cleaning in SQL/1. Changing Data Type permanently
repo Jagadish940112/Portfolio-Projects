@@ -1,0 +1,13 @@
+Right-Click Table(dbo.NashvilleHousing) -> Design -> Data Type
+
+Saving changes is not permitted. The changes that you have made require the following tables to be dropped and re-created.
+You have either made changes to a table that can’t be re-created or enabled the option Prevent saving changes that require the table to be re-created.
+
+To solve this error, in SSMS go to Tools > Options menu:
+
+In Options, go to Designers >Table and Database Designers and uncheck the Prevent saving changes that require table re-creation:
+
+This option will disable to option to prevent saving table recreation. When you modify the column data type, it requires table re-creation.
+Now, you can save the design and your table will be converted to date and the SQL convert date is completed:
+
+https://www.sqlshack.com/sql-convert-date/
