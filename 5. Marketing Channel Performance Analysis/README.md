@@ -8,3 +8,8 @@ Google BigQuery
 
 ### Data Set:
 Customer acquisition data obtained from [Kaggle](https://www.kaggle.com/datasets/bhanupratapbiswas/customer-lifetime-value-analytics-case-study).
+
+### Columns & Values:
+customer_id = This column contains the numbers from ***1 to 800***. It represents ***unique identifiers*** for each customer.
+
+channel = This column contains four repeating words: email marketing, paid advertising, referral, and social media. These words represent different marketing channels used to acquire customers.
