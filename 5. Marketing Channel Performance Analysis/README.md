@@ -12,4 +12,6 @@ Customer acquisition data obtained from [Kaggle](https://www.kaggle.com/datasets
 ### Columns & Values:
 customer_id = This column contains the numbers from ***1 to 800***. It represents the ***unique identifiers*** for each customer.
 
-channel = This column contains four repeating words: "***email marketing***", "***paid advertising***", "***referral***", and "***social media***". These words                      represent the different ***marketing channels*** used to acquire customers.
+channel = This column contains four repeating words: "***email marketing***", "***paid advertising***", "***referral***", and "***social media***". These words represent the different ***marketing channels*** used to acquire customers.
+
+cost = 
