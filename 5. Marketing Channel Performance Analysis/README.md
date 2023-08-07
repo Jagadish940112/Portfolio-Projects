@@ -14,4 +14,6 @@ customer_id = This column contains the numbers from ***1 to 800***. It represent
 
 channel = This column contains four repeating words: "***email marketing***", "***paid advertising***", "***referral***", and "***social media***". These words represent the different ***marketing channels*** used to acquire customers.
 
-cost = 
+cost = This column contains four repeating numbers: ***5.246263271***, ***30.45032721***, ***8.320326732***, and ***9.546325668***. These numbers represent the ***cost*** incurred to acquire customers through each respective marketing channel.
+
+conversion_rate = 
