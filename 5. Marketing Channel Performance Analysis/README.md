@@ -32,3 +32,19 @@
      |      13     | social media     | 9.546325668 |   0.167592247   |   3388  |
 
 ### Analysis:
+
+### 0. Preview Data
+
+```sql
+SELECT *
+FROM Kaggle.customer_acquisition_data
+ORDER BY customer_id ASC;
+```
+
+**Answer:**
+
+<img width="141" alt="image" src="">
+
+There are 554 unique users in the dataset.
+
+***
