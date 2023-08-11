@@ -43,8 +43,8 @@ ORDER BY customer_id ASC;
 
 **Answer:**
 
-<img width="141" alt="image" src="">
+![0. Preview Data](https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/ac85b0ab-9983-4e5f-8ad0-2fcfa5144ad3)
 
-There are 554 unique users in the dataset.
+The data is in a table form consisting of 5 columns and 800 rows.
 
 ***
