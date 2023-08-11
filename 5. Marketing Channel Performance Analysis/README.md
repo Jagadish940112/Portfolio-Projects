@@ -67,3 +67,28 @@ FROM Kaggle.customer_acquisition_data;
 There are 800 unique customers, all of whom have different numerical customer IDs.
 
 ***
+
+### 2. What is the distribution of customers across different marketing channels?
+Using Subquery
+
+```sql
+SELECT
+  channel AS Marketing_Channel,
+  COUNT(customer_id) AS Total_Customer,
+  ROUND(COUNT(customer_id) * 100 / all_customers.total_count) AS Customer_Percentage
+FROM Kaggle.customer_acquisition_data
+CROSS JOIN ( /*combine all rows from one table with all rows from another table*/
+  SELECT COUNT(customer_id) AS total_count
+  FROM Kaggle.customer_acquisition_data
+) AS all_customers
+GROUP BY channel, all_customers.total_count
+ORDER BY Total_Customer DESC;
+```
+
+**Answer:**
+
+![2. Customer Distribution](https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/06184ae1-947f-43a0-8bbb-18166856b42d)
+
+The distribution of customers acquired across different marketing channels is fairly even, with Email Marketing and Referral taking the lead.
+
+***
