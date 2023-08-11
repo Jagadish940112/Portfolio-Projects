@@ -1,5 +1,7 @@
 # Marketing Channel Performance Analysis
 
+![Marketing Channel](https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/75df45a6-e12e-4da7-b7c9-524b9bb9587b)
+
 ### Business Task:
 - Analyze and compare the performance of different marketing channels.
 
