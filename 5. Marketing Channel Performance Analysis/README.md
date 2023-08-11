@@ -50,3 +50,20 @@ ORDER BY customer_id ASC;
 The data is in a table form consisting of 5 columns and 800 rows.
 
 ***
+
+### 1. What is the total number of customers?
+
+```sql
+SELECT
+  COUNT(customer_id) AS Total_Customer,
+  COUNT(DISTINCT customer_id) AS Unique_Customer
+FROM Kaggle.customer_acquisition_data;
+```
+
+**Answer:**
+
+![1. Number of Customers](https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/d29fb59c-1bb7-414d-911c-d258d886f272)
+
+There are 800 unique customers, all of whom have different numerical customer IDs.
+
+***
