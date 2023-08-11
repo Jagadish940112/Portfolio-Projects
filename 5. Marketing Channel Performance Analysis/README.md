@@ -120,6 +120,7 @@ ORDER BY Total_Cost DESC, Average_Cost DESC;
 ![3. Customer Acquisition Cost](https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/ae61dacd-8f9e-4598-81a4-960efba9a564)
 
 Paid Advertising accounted for 56% of all customer acquisition costs, with its average cost 232% higher than the total average.
+
 Email Marketing accounted for only 11% of all customer acquisition costs, with its average cost 40% lower than the total average.
 
 ***
