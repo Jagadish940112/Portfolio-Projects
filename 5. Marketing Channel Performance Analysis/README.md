@@ -22,7 +22,7 @@
 
 * Column 2. channel directly ***affects*** Column 3. cost and Column 4. conversion_rate, meaning
   * IF channel = "***email marketing***", THEN cost = ***5.246263271*** AND conversion_rate = ***0.043822229***.
-* Refer the table below for values in channel, cost and conversion_rate columns.
+* Refer the table below for values in **channel**, **cost** and **conversion_rate** columns.
 
      | customer_id |      channel     |     cost    | conversion_rate | revenue |
      | :---------: | :--------------: | :---------: | :-------------: | :-----: |
