@@ -92,3 +92,34 @@ ORDER BY Total_Customer DESC;
 The distribution of customers acquired across different marketing channels is fairly even, with Email Marketing and Referral taking the lead.
 
 ***
+
+### 3. Compare the sum and average cost spent on customer acquisition for each marketing channel.
+Using Common Table Experssion (CTE)
+
+```sql
+WITH total_sum_avg AS (
+  SELECT
+    SUM(cost) AS sum_cost,
+    AVG(cost) AS avg_cost
+  FROM Kaggle.customer_acquisition_data
+)
+SELECT
+  channel AS Marketing_Channel,
+  ROUND(SUM(cost)) AS Total_Cost,
+  ROUND(SUM(cost) * 100 / total_sum_avg.sum_cost) AS Total_Percentage,
+  ROUND(AVG(cost), 2) AS Average_Cost,
+  ROUND(AVG(cost) * 100 / total_sum_avg.avg_cost) AS Average_Percentage
+FROM Kaggle.customer_acquisition_data
+CROSS JOIN total_sum_avg
+GROUP BY channel, total_sum_avg.sum_cost, total_sum_avg.avg_cost
+ORDER BY Total_Cost DESC, Average_Cost DESC;
+```
+
+**Answer:**
+
+![3. Customer Acquisition Cost](https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/ae61dacd-8f9e-4598-81a4-960efba9a564)
+
+Paid Advertising accounted for 56% of all customer acquisition costs, with its average cost 232% higher than the total average.
+Email Marketing accounted for only 11% of all customer acquisition costs, with its average cost 40% lower than the total average.
+
+***
