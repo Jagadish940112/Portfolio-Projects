@@ -124,3 +124,24 @@ Paid Advertising accounted for 56% of all customer acquisition costs, with its a
 Email Marketing accounted for only 11% of all customer acquisition costs, with its average cost 40% lower than the total average.
 
 ***
+
+### 4. Compare the average conversion rate between each marketing channel.
+
+```sql
+SELECT
+  channel,
+  AVG(conversion_rate) AS Avg_Convert_Rate
+FROM Kaggle.customer_acquisition_data
+GROUP BY channel
+ORDER BY Avg_Convert_Rate DESC;
+```
+
+**Answer:**
+
+![4. Conversion Rate](https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/98f0d33f-3392-4f80-a54d-afc8ca860544)
+
+The conversion rate represents the **proportion** of customers who have taken the desired action (e.g., making a purchase) out of the ***total** number of customers acquired through each marketing channel.
+
+***total** includes customers who did not make a purchase, for whom data is not available in the table.
+
+***
