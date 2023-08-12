@@ -145,3 +145,31 @@ The conversion rate represents the **proportion** of customers who have taken th
 ***total** includes customers who did not make a purchase, for whom data is not available in the table.
 
 ***
+
+### 5. What is the sum and average revenue for each marketing channel?
+Using Window function SUM() and AVG() with the OVER () clause
+
+```sql
+SELECT
+  channel AS Marketing_Channel,
+  SUM(revenue) AS Total_Revenue,
+  ROUND(SUM(revenue) * 100 / SUM(SUM(revenue)) OVER ()) AS Total_Percentage,
+  /*The inner SUM(revenue) calculates the sum of revenue for each marketing channel,
+    and the outer SUM() function in the window function calculates the sum of the revenue for all marketing channels without grouping*/
+  ROUND(AVG(revenue)) AS Average_Revenue,
+  ROUND(AVG(revenue) * 100 / AVG(AVG(revenue)) OVER (), 1) AS Average_Percentage
+  /*0.1% increase in Average_Percentage compared to result from Google Sheets due to larger decimal points processing in SQL*/
+FROM Kaggle.customer_acquisition_data
+GROUP BY channel
+ORDER BY channel ASC;
+```
+
+**Answer:**
+
+![5. Revenue](https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/25673bc6-2899-4746-b7e6-9ad8c0ae200b)
+
+The total revenue brought by each marketing channel is close to one another, except for Social Media, slightly behind.
+
+As for average revenue, both Email Marketing and Paid Advertising are tied for first place.
+
+***
