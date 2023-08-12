@@ -51,7 +51,7 @@ GROUP BY channel
 ORDER BY Avg_Convert_Rate DESC;
 
 -- 5. What is the sum and average revenue for each marketing channel?
--- Using Window function with the SUM() function and OVER () clause
+-- Using Window function SUM() and AVG() with the OVER () clause
 SELECT
   channel AS Marketing_Channel,
   SUM(revenue) AS Total_Revenue,
