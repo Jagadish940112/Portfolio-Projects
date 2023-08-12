@@ -147,7 +147,7 @@ The conversion rate represents the **proportion** of customers who have taken th
 ***
 
 ### 5. What is the sum and average revenue for each marketing channel?
-Using Window function SUM() and AVG() with the OVER () clause
+Using Window functions SUM() and AVG() with the OVER () clause
 
 ```sql
 SELECT
