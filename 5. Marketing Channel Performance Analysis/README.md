@@ -173,3 +173,29 @@ The total revenue brought by each marketing channel is close to one another, exc
 As for average revenue, both Email Marketing and Paid Advertising are tied for first place.
 
 ***
+
+### 6. Calculate the average Return on Investment (ROI) for each marketing channel.
+ROI = (revenue - cost) / cost
+
+```sql
+SELECT
+  channel AS Marketing_Channel,
+  ROUND(AVG((revenue - cost) / cost)) AS Average_ROI
+FROM Kaggle.customer_acquisition_data
+GROUP BY channel
+ORDER BY Average_ROI DESC;
+```
+
+**Answer:**
+
+![6. ROI](https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/b4187dc7-37c6-4a7a-acd6-1304f5b049c7)
+
+Email Marketing yielded the highest average ROI, while Paid Advertising did the opposite.
+
+The ROIs are expressed in ratios instead of percentages due to their large numbers.
+
+Even Paid Advertising resulted in an average 9200% ROI if converted to percentage.
+
+This is because the ROIs above accounted for the whole customer lifetime instead of a certain time period.
+
+***
