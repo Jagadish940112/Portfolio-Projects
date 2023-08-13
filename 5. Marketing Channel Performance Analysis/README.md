@@ -199,3 +199,5 @@ Even Paid Advertising resulted in an average 9200% ROI if converted to percentag
 This is because the ROIs above accounted for the whole customer lifetime instead of a certain time period.
 
 ***
+
+### 7.
