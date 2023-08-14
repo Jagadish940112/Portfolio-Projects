@@ -208,5 +208,62 @@ Value = Medium, if CLV = average CLV <br>
 Value = Low, if CLV < average CLV
 
 ```sql
-
+WITH CTE AS (
+  SELECT *,
+    CASE
+      WHEN CLV > Average_CLV THEN 'High'
+      WHEN CLV = Average_CLV THEN 'Medium'
+      WHEN CLV < Average_CLV THEN 'Low'
+    END AS Value
+  FROM (
+    SELECT *,
+      (revenue - cost) * conversion_rate / cost AS CLV,
+      AVG((revenue - cost) * conversion_rate / cost) OVER () AS Average_CLV
+    FROM Kaggle.customer_acquisition_data
+  )
+)
+SELECT
+  channel AS Marketing_Channel,
+  COUNT(CASE WHEN Value = 'High' THEN 1 END) AS High,
+  --COUNT(CASE WHEN Value = 'Medium' THEN 1 END) AS Medium,/*Zero Count for Medium for all Channel*/
+  COUNT(CASE WHEN Value = 'Low' THEN 1 END) AS Low
+FROM CTE
+GROUP BY channel
+ORDER BY High DESC;
 ```
+
+How the CTE looks like:
+
+![7a. CTE](https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/721a329e-b9fe-4682-baf5-e381fb3660f8)
+
+**Answer:**
+
+![7b. CLV](https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/6120a887-17a7-4ea6-baff-bba695782809)
+
+Referral brought in the most high-value customers, followed closely by Social Media.
+
+Paid Advertising had zero high-value customers due to its high customer acquisition cost, which drove CLV lower than the average.
+
+***
+
+shorter version of above query to get the same result but without creating "Value" column
+
+```sql
+SELECT
+  channel AS Marketing_Channel,
+  COUNT(CASE WHEN CLV > Average_CLV THEN 1 END) AS High,
+  --COUNT(CASE WHEN CLV = Average_CLV THEN 1 END) AS Medium,/*Zero Count for Medium for all Channel*/
+  COUNT(CASE WHEN CLV < Average_CLV THEN 1 END) AS Low
+FROM (
+  SELECT *,
+    (revenue - cost) * conversion_rate / cost AS CLV,
+    AVG((revenue - cost) * conversion_rate / cost) OVER () AS Average_CLV
+  FROM Kaggle.customer_acquisition_data
+) AS subquery
+GROUP BY channel
+ORDER BY High DESC;
+```
+
+***
+
+# THE END
