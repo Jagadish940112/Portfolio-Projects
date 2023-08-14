@@ -57,7 +57,7 @@ SELECT
   SUM(revenue) AS Total_Revenue,
   ROUND(SUM(revenue) * 100 / SUM(SUM(revenue)) OVER ()) AS Total_Percentage,
   /*The inner SUM(revenue) calculates the sum of revenue for each marketing channel,
-    and the outer SUM() function in the window function calculates the sum of the revenue for all marketing channels without grouping*/
+    and the outer SUM() in the window function calculates the sum of the revenue for all marketing channels without grouping*/
   ROUND(AVG(revenue)) AS Average_Revenue,
   ROUND(AVG(revenue) * 100 / AVG(AVG(revenue)) OVER (), 1) AS Average_Percentage
   /*0.1% increase in Average_Percentage compared to result from Google Sheets due to larger decimal points processing in SQL*/
