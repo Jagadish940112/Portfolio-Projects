@@ -200,4 +200,13 @@ This is because the ROIs above accounted for the whole customer lifetime instead
 
 ***
 
-### 7.
+### 7. Identify which marketing channel brought in the most high-value customers based on Customer Lifetime Value (CLV).
+CLV = (revenue - cost) * conversion_rate / cost
+
+Value = High, if CLV > average CLV <br>
+Value = Medium, if CLV = average CLV <br>
+Value = Low, if CLV < average CLV
+
+```sql
+
+```
