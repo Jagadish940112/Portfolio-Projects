@@ -88,12 +88,12 @@ WITH CTE AS (
       WHEN CLV = Average_CLV THEN 'Medium'
       WHEN CLV < Average_CLV THEN 'Low'
     END AS Value
-  FROM(
+  FROM (
     SELECT *,
       (revenue - cost) * conversion_rate / cost AS CLV,
       AVG((revenue - cost) * conversion_rate / cost) OVER () AS Average_CLV
     FROM Kaggle.customer_acquisition_data
-)
+  )
 )
 SELECT
   channel AS Marketing_Channel,
