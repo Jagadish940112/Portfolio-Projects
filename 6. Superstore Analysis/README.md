@@ -3,7 +3,7 @@
 <img src="https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/a457a77a-e947-4284-bc29-e523576b69d5" alt="Superstore" width="1100" height="550">
 
 ### Objective:
-- Analyzing Superstore dataset using Main SQL Concepts.
+- Analyze the Superstore dataset using Main SQL Concepts.
 
 ### Tool:
 - Microsoft SQL Server Management Studio 18
