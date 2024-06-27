@@ -47,4 +47,10 @@ From Orders table:
 
 17. Product Name = Words.
 
-18. Sales = 
+18. Sales = Sales of each product, ranging from 0.444 to 22638.48.
+
+19. Quantity = Quantities purchased for each product, ranging from 1 to 14.
+
+20. Discount = Discount provided for each product, expressed as a decimal ranging from 0 to 0.8.
+
+21. Profit = Profit/Loss incurred.-6599.978 – 8399.976
