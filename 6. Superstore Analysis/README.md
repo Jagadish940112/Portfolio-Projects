@@ -39,4 +39,12 @@ From Orders table:
 
 13. Region = Each state is assigned to a region — "Central", "East", "South", or "West" — based on its geographical location.
 
-14. Product ID = Unique identifier assigned to each product, formatted as XXX(Category Initial)-XX(Sub-Category Initial)-XXXXXXXX(Numbers), e.g., FUR-BO-10001798.
+14. Product ID = ***Unique identifiers*** assigned to each ***product***, formatted as XXX(Category Initial)-XX(Sub-Category Initial)-XXXXXXXX(Numbers), e.g., FUR-BO-10001798.
+
+15. Category = Each sub-category falls into one of the following categories: "Furniture", "Office Supplies", or "Technology".
+
+16. Sub-Category = Each product is classified into one of 17 sub-categories.
+
+17. Product Name = Words.
+
+18. Sales = 
