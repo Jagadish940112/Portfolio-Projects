@@ -45,12 +45,12 @@ From Orders table:
 
 16. Sub-Category = Each product is classified into one of 17 sub-categories.
 
-17. Product Name = Words.
+17. Product Name = Names of the product.
 
-18. Sales = Sales of each product, ranging from 0.444 to 22638.48.
+18. Sales = Sales amount of each product, ranging from 0.444 to 22638.48.
 
 19. Quantity = Quantities purchased for each product, ranging from 1 to 14.
 
 20. Discount = Discount provided for each product, expressed as a decimal ranging from 0 to 0.8.
 
-21. Profit = Profit/Loss incurred.-6599.978 – 8399.976
+21. Profit = Profit/Loss incurred for each product, ranging from -6599.978 to 8399.976.
