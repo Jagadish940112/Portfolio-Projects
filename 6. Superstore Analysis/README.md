@@ -74,3 +74,8 @@ From People table:
 ### Combining Tables:
 - Use INNER JOIN between Orders & People tables on Region column.
 - Use LEFT JOIN between Orders & Returns tables on Order ID column.
+
+### Cleaning Up:
+- Rename “Person” column to “SalesPerson” from People table after joining tables.
+- Remove/Hide duplicate Order ID column from Returns table after joining tables.
+- Remove/Hide duplicate Region column from People table after joining tables.
