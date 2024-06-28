@@ -54,3 +54,13 @@ From Orders table:
 20. Discount = Discount provided for each product, expressed as a decimal ranging from 0 to 0.8.
 
 21. Profit = Profit/Loss incurred for each product, ranging from -6599.978 to 8399.976.
+
+From Returns table:
+1. Returned = "Yes" only.
+
+2. Order ID = Same as above. Orders that were returned.
+
+From People table:
+1. Person = Salesperson responsible for each region.
+
+2. Region = Same as above. Each region is managed by a different person.
