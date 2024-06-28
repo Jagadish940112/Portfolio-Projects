@@ -77,5 +77,5 @@ From People table:
 
 ### Cleaning Up:
 - Rename “Person” column to “SalesPerson” from People table after joining tables.
-- Remove/Hide duplicate Order ID column from Returns table after joining tables.
-- Remove/Hide duplicate Region column from People table after joining tables.
+- Remove/Hide duplicate "Order ID" column from Returns table after joining tables.
+- Remove/Hide duplicate "Region" column from People table after joining tables.
