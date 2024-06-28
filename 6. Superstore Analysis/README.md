@@ -64,3 +64,13 @@ From People table:
 1. Person = Salesperson responsible for each region.
 
 2. Region = Same as above. Each region is managed by a different person.
+
+### Schema:
+<img src="https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/04f96f29-ea7c-4d93-ac3d-fc1247b28de2" alt="Schema" width="1100" height="550">
+
+### Model:
+<img src="https://github.com/Jagadish940112/Portfolio-Projects/assets/116116336/614ac0ab-a636-44a1-94a1-d69f2c32cd15" alt="Model" width="1100" height="550">
+
+### Combining Tables:
+- Use INNER JOIN between Orders & People tables on Region column.
+- Use LEFT JOIN between Orders & Returns tables on Order ID column.
