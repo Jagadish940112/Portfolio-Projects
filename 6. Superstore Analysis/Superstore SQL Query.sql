@@ -27,13 +27,13 @@ WHERE Returned IS NOT NULL;
 
 -- Replacing NULLs with other values is typically done using NULLIF(), COALESCE(), or CASE statement.
 SELECT Returned,
-	   COALESCE(Returned, 'No') AS edited_Returned
+	COALESCE(Returned, 'No') AS edited_Returned
 FROM #CombinedTable;
 
 -- 3. Data Type Conversion
 -- Change "Order Date" data type from datetime to date using CAST().
 SELECT [Order Date],
-	   CAST([Order Date] AS date) AS edited_Order_Date
+	CAST([Order Date] AS date) AS edited_Order_Date
 FROM #CombinedTable
 ORDER BY [Row ID] DESC;
 
@@ -41,7 +41,7 @@ ORDER BY [Row ID] DESC;
 -- Aggregate functions (COUNT, SUM, AVG, MIN, MAX), GROUP BY, HAVING
 -- Find all the Sub-Categories that have made at least 100k in total sales.
 SELECT [Sub-Category],
-	   ROUND(SUM(Sales), 2) AS Total_Sales
+	ROUND(SUM(Sales), 2) AS Total_Sales
 FROM #CombinedTable
 GROUP BY [Sub-Category]
 HAVING SUM(Sales) >= 100000
