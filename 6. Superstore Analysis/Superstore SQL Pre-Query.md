@@ -98,4 +98,4 @@ ORDER BY [Row ID] ASC;
 
 ### The table is ready for querying.
 
-Previous: [Introduction](https://github.com/Jagadish940112/Portfolio-Projects/tree/main/6.%20Superstore%20Analysis)<p align="right">Next: [Superstore SQL Query](https://github.com/Jagadish940112/Portfolio-Projects/blob/main/6.%20Superstore%20Analysis/Superstore%20SQL%20Query.md)</p>
+<br>Previous: [Introduction](https://github.com/Jagadish940112/Portfolio-Projects/tree/main/6.%20Superstore%20Analysis)<p align="right">Next: [Superstore SQL Query](https://github.com/Jagadish940112/Portfolio-Projects/blob/main/6.%20Superstore%20Analysis/Superstore%20SQL%20Query.md)</p>
