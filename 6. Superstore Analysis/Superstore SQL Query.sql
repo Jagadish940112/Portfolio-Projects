@@ -163,5 +163,5 @@ WHERE
 ORDER BY
 	[Customer Name],
 	[Order Date];
--- Results may contain duplicate `Order ID` due to different `Product Name`s.
+-- Results may contain duplicate 'Order IDs' due to different 'Product Names'.
 -- Same `Order ID` is assigned to each `Product Name` in a single order.
