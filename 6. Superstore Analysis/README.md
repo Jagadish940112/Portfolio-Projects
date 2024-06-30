@@ -80,4 +80,4 @@ From People table:
 - Remove/Hide duplicate "Order ID" column from Returns table after joining tables.
 - Remove/Hide duplicate "Region" column from People table after joining tables.
 
-Next: [Superstore SQL Pre-Query](https://github.com/Jagadish940112/Portfolio-Projects/blob/main/6.%20Superstore%20Analysis/Superstore%20SQL%20Pre-Query.md)
+<br>Next: [Superstore SQL Pre-Query](https://github.com/Jagadish940112/Portfolio-Projects/blob/main/6.%20Superstore%20Analysis/Superstore%20SQL%20Pre-Query.md)
