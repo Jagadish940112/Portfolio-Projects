@@ -216,4 +216,4 @@ Final results:
 
 Results may contain duplicate 'Order IDs' due to different 'Product Names'.<br>
 Same 'Order ID' is assigned to each 'Product Name' in a single order.
-Previous: [Superstore SQL Query](https://github.com/Jagadish940112/Portfolio-Projects/blob/main/6.%20Superstore%20Analysis/Superstore%20SQL%20Pre-Query.md)
+<br>Previous: [Superstore SQL Query](https://github.com/Jagadish940112/Portfolio-Projects/blob/main/6.%20Superstore%20Analysis/Superstore%20SQL%20Pre-Query.md)
