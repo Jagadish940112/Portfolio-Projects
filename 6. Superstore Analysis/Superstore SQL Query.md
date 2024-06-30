@@ -1,7 +1,9 @@
 ### 1. Querying, Joining & Sorting Data
 - Create a temporary table "CombinedTable" to avoid repeating JOINs & to remove duplicate columns (PeopleRegion, OrderIDclone).
 - Refer to [Superstore SQL Pre-Query](https://github.com/Jagadish940112/Portfolio-Projects/blob/main/6.%20Superstore%20Analysis/Superstore%20SQL%20Pre-Query.md)
+
 ***
+
 ### 2. Working with NULLS
 - Find out how many orders were returned.
 - A "Yes" in the Returned column indicates that an order was returned; otherwise, it is marked as "NULL".
