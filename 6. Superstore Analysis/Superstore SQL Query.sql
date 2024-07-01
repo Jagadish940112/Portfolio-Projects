@@ -17,7 +17,7 @@ DROP COLUMN PeopleRegion;
 ALTER TABLE #CombinedTable
 DROP COLUMN OrderIDclone;
 
--- 2. Working with NULLS
+-- 2. Working with NULLs
 -- Find out how many orders were returned.
 -- A "Yes" in the Returned column indicates that an order was returned; otherwise, it is marked as "NULL".
 -- The Order ID column contains duplicates. Use DISTINCT to count unique orders.
