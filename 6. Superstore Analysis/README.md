@@ -6,7 +6,7 @@
 - Analyze the Superstore dataset using Main SQL Concepts.
 
 ### Tool:
-- Microsoft SQL Server Management Studio 18
+- Microsoft SQL Server Management Studio (SSMS) 18
 
 ### Data Set:
 - Superstore Sales sample data obtained from [Tableau](https://public.tableau.com/app/learn/sample-data).
